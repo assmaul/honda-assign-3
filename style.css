@@ -1,0 +1,210 @@
+/* ==============================================
+common css
+================================================= */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    font-size: 16px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #6c6c6c;
+    background-color: #FFFFFF;
+}
+.c_btn_bg{
+    outline: 1px solid #E76F51;
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.c_btn_bg:hover{
+    background-color: #E76F51;
+    border-radius: 0;
+}
+
+.heading1{
+    font-size: 48px;
+    font-weight: 600;
+}
+.heading2{
+    font-size: 38px;
+    font-weight: 500;
+}
+.heading3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.heading4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text_highlight{
+    color: #E76F51;
+}
+
+.c_border{
+    border: 1px solid #EEEEEE;
+}
+/* ================================
+css for header area
+=================================== */
+#header_area{
+    background-color: #264653;
+    padding: 30px 0;
+}
+
+#header_area p{
+    color: #e0e0e0;
+}
+
+/* ================================
+css for main area
+=================================== */
+#main_area{
+    margin-top: 50px;
+}
+
+/* bikes */
+.text_highlight::after{
+    content:"";
+    width: 80px;
+    height: 2px;
+    display: block;
+    background-color:#E76F51;
+    margin: 5px auto;
+}
+
+.single_bike img:hover{
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+/* news */
+.news{
+    margin-top: 70px;
+}
+
+/* testimonials */
+.testimonials{
+    margin-top: 40px;
+}
+
+.testimonials .text_highlight::after{
+    background: none;
+}
+
+.stars span{
+    color: #E76F51;
+    font-size: 14px;
+}
+
+.single_clint .name{
+    color: #3EB1F2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.single_clint .profession{
+    color: #252B42;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* FAQ */
+.faq .text_highlight::after{
+    background: none;
+}
+
+/* our team */
+.team{
+    margin-top: 50px;
+}
+
+.single_team{
+    position: relative;
+}
+
+.team_hover{
+    position: absolute;
+    left: 113px;
+    top: 259px;
+    background-color: rgb(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 7px;
+    color: white;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.team_hover span{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+
+.single_team:hover .team_hover{
+    visibility: visible;
+}
+
+/* timeline */
+.timeline{
+    margin-top: 50px;
+}
+
+.timeline ul{
+    position: relative;
+}
+
+.timeline ul::before{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background-color: #E76F51;
+    content: "";
+}
+
+.timeline ul li{
+    margin-bottom: 30px;
+    display: block;
+    clear: both;
+    position: relative;
+}
+
+.timeline ul li::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #E76F51;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.timeline ul li .timeline_content{
+    width: 45%;
+    padding: 30px;
+    border: 2px solid #E76F51;
+}
+
+.timeline ul li:nth-child(even) .timeline_content{
+    float: right;
+    text-align: left;
+}
+    
+/* ================================
+css for footer area
+=================================== */
+#footer_area{
+    background-color: #0B0D17;
+    color: #fff;
+    margin-top: 50px;
+}
+/* END *
